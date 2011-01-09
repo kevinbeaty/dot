@@ -10,3 +10,4 @@ set smarttab
 set shiftwidth=2
 set autoindent
 set expandtab
+color vividchalk
