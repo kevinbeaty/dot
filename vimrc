@@ -10,6 +10,3 @@ set smarttab
 set shiftwidth=2
 set autoindent
 set expandtab
-
-" Fix supertab endwise conflict
-let g:SuperTabCrMapping=0
