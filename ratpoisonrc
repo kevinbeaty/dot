@@ -1,0 +1,20 @@
+# Use left arrow instead of crosshair for default cursor
+exec xsetroot -cursor_name left_ptr
+# Silent welcome to ratposion message
+startup_message off
+
+# Keybindings can be double checked 
+# with <escape>: bind <key> echo test
+# <escape> <key>  should echo test
+
+# Change default escape Ctrl-t to Windows esc
+escape s-space
+
+# Windows j, k for next, prev
+definekey top s-j next
+definekey top s-k prev
+
+# Apps Windows c for console, windows f for firefox, etc
+definekey top s-c exec urxvt +sb -fg white -bg black -fn 'xft:DejaVu Sans Mono'
+definekey top s-f exec firefox
+
