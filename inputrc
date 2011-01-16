@@ -1,0 +1,3 @@
+# Up and down use Ctrl-R style history search
+"\e[A":history-search-backward
+"\e[B":history-search-forward
