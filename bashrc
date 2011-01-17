@@ -16,10 +16,15 @@ if [[ -n "$PS1" ]]; then
 
   # Duplicate commands will not append bash history
   HISTCONTROL=ignoredups
+  
+  # add ~/local/bin if exists
+  if [ -d $HOME/local/bin ] ; then
+    PATH=$HOME/local/bin:$PATH
+  fi
 
   # add ~/bin if exists
-  if [ -d ~/bin ] ; then
-    PATH=$PATH:~/bin
+  if [ -d $HOME/bin ] ; then
+    PATH=$HOME/bin:$PATH
   fi
 
 fi
