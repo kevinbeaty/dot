@@ -1,0 +1,11 @@
+[user]
+  name = Kevin Beaty
+  email = kevin@simplectic.com
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[alias]
+  graph = log --graph --oneline --decorate

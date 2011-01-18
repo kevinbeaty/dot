@@ -11,4 +11,5 @@
 #ln -s $PWD/ratpoisonrc ~/.ratpoisonrc
 #ln -s $PWD/vimrc ~/.vimrc
 #ln -s $PWD/vim ~/.vim
+#ln -s $PWD/gitconfig ~/.gitconfig #Remember to change user and email
 
