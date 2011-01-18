@@ -1,7 +1,7 @@
 # Check for an interactive session
 if [[ -n "$PS1" ]]; then
 
-  PS1='[\u@\h \W]\$ '
+  PS1='\[\e[32m\]\h \[\e[33m\]\W $(__git_ps1 "(%s)")\[\e[0m\]\$ '
 
   # vim for editor, console, vi
   EDITOR=vim
