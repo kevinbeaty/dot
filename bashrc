@@ -14,6 +14,8 @@ if [[ -n "$PS1" ]]; then
   alias grep='grep --color=auto'
   eval $(dircolors -b)
 
+  alias ..='cd ..'
+
   # Duplicate commands will not append bash history
   HISTCONTROL=ignoredups
   
@@ -25,7 +27,14 @@ if [[ -n "$PS1" ]]; then
   # add ~/bin if exists
   if [ -d $HOME/bin ] ; then
     PATH=$HOME/bin:$PATH
+    
+    # source git_completion if exists
+    if [ -r $HOME/bin/git-completion.bash ] ; then
+      . $HOME/bin/git-completion.bash
+    fi
+
   fi
+
 
 fi
 
