@@ -11,3 +11,9 @@ set shiftwidth=2
 set autoindent
 set expandtab
 color vividchalk
+
+" Use firefox for OpenURL (Rpreview)
+"command -bar -nargs=1 OpenURL :!firefox <args>
+
+" Use vimprobable for OpenURL (Rpreview)
+ command -bar -nargs=1 OpenURL :!vimprobable2 <args>
