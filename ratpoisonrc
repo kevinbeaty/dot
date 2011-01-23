@@ -1,5 +1,9 @@
 # Use left arrow instead of crosshair for default cursor
 exec xsetroot -cursor_name left_ptr
+
+# banish cursor at startup
+banish
+
 # Silent welcome to ratposion message
 startup_message off
 
@@ -7,7 +11,7 @@ startup_message off
 # with <escape>: bind <key> echo test
 # <escape> <key>  should echo test
 
-# Change default escape Ctrl-t to Windows esc
+# Change default escape Ctrl-t to Windows space
 escape s-space
 
 # Windows j, k for next, prev
@@ -17,4 +21,5 @@ definekey top s-k prev
 # Apps Windows c for console, windows f for firefox, etc
 definekey top s-c exec urxvt +sb -fg white -bg black -fn 'xft:DejaVu Sans Mono'
 definekey top s-f exec firefox
-
+definekey top s-v exec vimprobable2
+definekey top s-d exec vimprobable2 ~/doc/index.html
