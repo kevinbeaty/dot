@@ -2,6 +2,7 @@
 
 # Install git submodules
 #git submodule update --init
+#git submodule foreach git submodule update --init
 
 #Link dot files
 #ln -s $PWD/bash_profile ~/.bash_profile
