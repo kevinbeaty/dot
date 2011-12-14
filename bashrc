@@ -29,6 +29,15 @@ if [[ -n "$PS1" ]]; then
 
   fi
 
+  # Ammend PYTHONPATH for pyqt
+  if [ -d /usr/local/lib/python ] ; then
+    export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+  fi
+
+  # Prepend shared python path if exists
+  if [ -d /usr/local/share/python ] ; then
+    PATH=/usr/local/share/python:$PATH
+  fi
 
 fi
 
@@ -43,3 +52,9 @@ if [ -s /usr/bin/virtualenvwrapper.sh ] ; then
     source /usr/bin/virtualenvwrapper.sh
 fi
 
+if [ -s /usr/local/share/python/virtualenvwrapper.sh ] ; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+    export WORKON_HOME="$HOME/.virtualenvs"
+    export PROJECT_HOME="$HOME/projects"
+    source /usr/local/share/python/virtualenvwrapper.sh
+fi
