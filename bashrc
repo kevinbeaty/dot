@@ -12,6 +12,11 @@ if [[ -n "$PS1" ]]; then
 
   # Duplicate commands will not append bash history
   export HISTCONTROL=ignoredups
+
+  # add /usr/local/bin if exists
+  if [ -d /usr/local/bin ] ; then
+    PATH=/usr/local/bin:$PATH
+  fi
   
   # add ~/local/bin if exists
   if [ -d $HOME/local/bin ] ; then
