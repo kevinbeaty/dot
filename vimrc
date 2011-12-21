@@ -26,3 +26,14 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType="context"
 set completeopt=menuone,longest,preview 
 let g:pep8_map='<leader>8'
+
+" Sends text to next tmux pane
+function! Tmux(text)
+    let escaped = substitute(a:text, "'", "'\\\\''", 'g') 
+    call system("tmux set-buffer '" . escaped . "'")
+    call system("tmux paste-buffer -t:.+1")
+endfunction
+
+vmap <C-c><C-c> "ty :call Tmux(@t)<CR>
+nmap <C-c><C-c> vip<C-c><C-c>
+command! -nargs=* Tmux call Tmux(<q-args> . "\n")
