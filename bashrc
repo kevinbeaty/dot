@@ -46,10 +46,6 @@ if [[ -n "$PS1" ]]; then
 
 fi
 
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
-
 # virtualenvwrapper
 if [ -s /usr/bin/virtualenvwrapper.sh ] ; then
     export WORKON_HOME="$HOME/.virtualenvs"
