@@ -39,3 +39,7 @@ endfunction
 vmap <C-c><C-c> "ty :call Tmux(@t)<CR>
 nmap <C-c><C-c> vip<C-c><C-c>
 command! -nargs=* Tmux call Tmux(<q-args> . "\n")
+
+" Pasting into IPython to avoid indentation errors
+vmap <C-c><C-i> "ty :call Tmux("\n%cpaste\n" . @t . "\n--\n")<CR>
+nmap <C-c><C-i> vip<C-c><C-i>
