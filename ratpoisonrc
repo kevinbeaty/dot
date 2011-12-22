@@ -19,7 +19,7 @@ definekey top s-j next
 definekey top s-k prev
 
 # Apps Windows c for console, windows f for firefox, etc
-definekey top s-c exec urxvt +sb -fg white -bg black -fn 'xft:DejaVu Sans Mono'
+definekey top s-c exec urxvt 
 definekey top s-f exec firefox
 definekey top s-v exec vimprobable2
 definekey top s-d exec vimprobable2 ~/doc/index.html

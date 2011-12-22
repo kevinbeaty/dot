@@ -13,7 +13,9 @@ set softtabstop=4
 set smarttab
 set shiftwidth=4
 set autoindent
-color vividchalk
+
+set background=dark
+colorscheme solarized
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
