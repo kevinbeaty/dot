@@ -5,6 +5,7 @@
 #git submodule foreach git submodule update --init
 
 #Link dot files
+#ln -s $PWD/zshrc ~/.zshrc
 #ln -s $PWD/bash_profile ~/.bash_profile
 #ln -s $PWD/bashrc ~/.bashrc
 #ln -s $PWD/xinitrc ~/.xinitrc
