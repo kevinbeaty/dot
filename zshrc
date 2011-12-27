@@ -1,4 +1,4 @@
-PROMPT='$ '
+PROMPT='%1~ %(!.#.$) '
 RPROMPT='!%!'
 
 # vim for editor, console, vi
@@ -12,7 +12,7 @@ export PAGER=less
 setopt no_beep
 setopt auto_cd
 setopt multios
-setopt cdablevarS
+setopt cdable_vars
 setopt prompt_subst
 
 # History 
@@ -82,7 +82,7 @@ function title {
 #Appears when you have the prompt
 function omz_termsupport_precmd {
   # left truncated pwd with git prompt
-  title "%40<<%~%<<$(git_prompt_info)" 
+  title "%m %1~$(git_prompt_info)" 
 }
 
 #Appears at the beginning of (and during) of command execution
