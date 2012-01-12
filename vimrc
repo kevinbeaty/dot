@@ -13,6 +13,7 @@ set softtabstop=4
 set smarttab
 set shiftwidth=4
 set autoindent
+set backspace=eol,indent,start
 
 set background=dark
 colorscheme solarized
