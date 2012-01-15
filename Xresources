@@ -1,3 +1,7 @@
+!! xterm fonts
+XTerm*faceName: xft:DejaVu Sans Mono
+XTerm*faceSize: 12
+
 !! Use nice font and no scrollbar for urxvt
 URxvt.scrollBar: off
 URxvt.font: xft:DejaVu Sans Mono
