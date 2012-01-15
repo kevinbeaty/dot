@@ -13,6 +13,8 @@
 #ln -s $PWD/inputrc ~/.inputrc
 #ln -s $PWD/tmux.conf ~/.tmux.conf
 #ln -s $PWD/ratpoisonrc ~/.ratpoisonrc
+#mkdir -p ~/.xmonad
+#ln -s $PWD/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 #ln -s $PWD/vimrc ~/.vimrc
 #ln -s $PWD/vim ~/.vim
 #ln -s $PWD/gitconfig ~/.gitconfig #Remember to change user and email
