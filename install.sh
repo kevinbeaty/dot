@@ -10,6 +10,7 @@
 #ln -s $PWD/bashrc ~/.bashrc
 #ln -s $PWD/xinitrc ~/.xinitrc
 #ln -s $PWD/Xresources ~/.Xresources
+#ln -s $PWD/Xmodmap ~/.Xmodmap
 #ln -s $PWD/inputrc ~/.inputrc
 #ln -s $PWD/tmux.conf ~/.tmux.conf
 #ln -s $PWD/ratpoisonrc ~/.ratpoisonrc
