@@ -4,7 +4,7 @@ XTerm*faceSize: 12
 
 !! Use nice font and no scrollbar for urxvt
 URxvt.scrollBar: off
-URxvt.font: xft:DejaVu Sans Mono
+URxvt.font: xft:Inconsolata:size=14,xft:DejaVu Sans Mono
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
