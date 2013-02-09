@@ -8,4 +8,5 @@
   branch = auto
 
 [alias]
-  graph = log --graph --oneline --decorate
+  graph = log --graph --oneline --decorate --all
+  lola = log --graph --decorate --pretty=format:\"%C(yellow)%h %Cred%cr %Cblue(%an)%C(white)%d%Creset %s\" --abbrev-commit --all
