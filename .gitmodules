@@ -25,3 +25,6 @@
 [submodule "vim/bundle/jedi"]
 	path = vim/bundle/jedi
 	url = git://github.com/davidhalter/jedi-vim
+[submodule "vim/bundle/jinja2"]
+	path = vim/bundle/jinja2
+	url = git://github.com/Glench/Vim-Jinja2-Syntax
