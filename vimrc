@@ -36,6 +36,7 @@ nmap <leader>a :Ack!
 nmap <silent> <leader>f :CtrlP<CR>
 nmap <silent> <leader>F :CtrlPCurWD<CR>
 
+let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 set wildmode=list:longest
 set wildmenu
