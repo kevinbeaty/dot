@@ -8,3 +8,7 @@ nmap <C-c><C-i> vip<C-c><C-i>
 
 " Flake 8 on write
 autocmd BufWritePost *.py call Flake8()
+
+" Jedi
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#popup_on_dot = 0
