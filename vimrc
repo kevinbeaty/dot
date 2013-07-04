@@ -5,6 +5,7 @@ call pathogen#infect()
 
 syntax on
 filetype on
+filetype plugin on
 filetype plugin indent on
 set expandtab
 set smarttab
@@ -37,7 +38,7 @@ nmap <silent> <leader>f :CtrlP<CR>
 nmap <silent> <leader>F :CtrlPCurWD<CR>
 
 let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+set completeopt=longest,preview
 set wildmode=list:longest
 set wildmenu
 set wildignore=*.o,*.obj,*.swp
