@@ -11,6 +11,8 @@
 #ln -s $PWD/xinitrc ~/.xinitrc
 #ln -s $PWD/Xresources ~/.Xresources
 #ln -s $PWD/Xmodmap ~/.Xmodmap
+#ln -s $PWD/xsession ~/.xsession
+#ln -s $PWD/Xmodmap ~/.xmodmap
 #ln -s $PWD/inputrc ~/.inputrc
 #ln -s $PWD/tmux.conf ~/.tmux.conf
 #mkdir -p ~/.xmonad
