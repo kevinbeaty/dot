@@ -16,16 +16,11 @@ set backspace=eol,indent,start
 set title
 set ruler
 set showcmd
-set hidden
 set history=1000
 set ignorecase
 set smartcase
 set scrolloff=3
 set visualbell
-
-" swap so ' marks to column
-nnoremap ' `
-nnoremap ` '
 
 set background=dark
 colorscheme solarized
@@ -41,14 +36,6 @@ nmap <leader>a :Ack!
 nmap <silent> <leader>f :CtrlP<CR>
 nmap <silent> <leader>F :CtrlPCurWD<CR>
 
-" Show trailing whitespace, tabs
-" Do not wrap and show extending and preceding text of long lines
-set nowrap
-set list
-set lcs=tab:>-,trail:_,nbsp:%,extends:>,precedes:\<
-nmap <silent> <leader>s :set nolist!<CR>
-
-let g:SuperTabDefaultCompletionType="context"
 set completeopt=menuone,longest,preview
 set wildmode=list:longest
 set wildmenu
