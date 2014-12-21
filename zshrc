@@ -132,6 +132,13 @@ then
     source /usr/bin/virtualenvwrapper.sh
 fi
 
+if [ -s /usr/local/bin/virtualenvwrapper.sh ]
+then
+    export WORKON_HOME="$HOME/.virtualenvs"
+    export PROJECT_HOME="$HOME/projects"
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 if [ -s /usr/local/share/python/virtualenvwrapper.sh ]
 then
     export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
