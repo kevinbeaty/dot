@@ -1,7 +1,7 @@
 # Check for an interactive session
 if [[ -n "$PS1" ]]; then
 
-  export PS1='\[\e[32m\]\h \[\e[33m\]\W $(__git_ps1 "(%s)")\[\e[0m\]\$ '
+  export PS1='\[\e[32m\]\h \[\e[33m\]\W \[\e[0m\]\$ '
 
   # vim for editor, console, vi
   export EDITOR=vim
@@ -58,4 +58,10 @@ if [ -s /usr/local/share/python/virtualenvwrapper.sh ] ; then
     export WORKON_HOME="$HOME/.virtualenvs"
     export PROJECT_HOME="$HOME/projects"
     source /usr/local/share/python/virtualenvwrapper.sh
+fi
+
+if [ -s /usr/local/bin/virtualenvwrapper.sh ] ; then
+    export WORKON_HOME="$HOME/.virtualenvs"
+    export PROJECT_HOME="$HOME/projects"
+    source /usr/local/bin/virtualenvwrapper.sh
 fi
