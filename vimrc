@@ -22,9 +22,12 @@ set ignorecase
 set smartcase
 set scrolloff=3
 set visualbell
+set hidden
 
 set background=dark
 colorscheme solarized
+let g:solarized_termtrans = 1
+
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -33,9 +36,6 @@ map <c-h> <c-w>h
 
 let mapleader=","
 nmap <leader>a :Ack!
-
-nmap <silent> <leader>f :CtrlP<CR>
-nmap <silent> <leader>F :CtrlPCurWD<CR>
 
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=longest,preview

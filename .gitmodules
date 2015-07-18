@@ -31,3 +31,6 @@
 [submodule "vim/bundle/python-syntax"]
 	path = vim/bundle/python-syntax
 	url = git://github.com/hdima/python-syntax
+[submodule "vim/bundle/vim-bufferline"]
+	path = vim/bundle/vim-bufferline
+	url = https://github.com/bling/vim-bufferline

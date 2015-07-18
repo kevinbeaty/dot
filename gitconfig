@@ -12,3 +12,5 @@
   lola = log --graph --decorate --pretty=format:\"%C(yellow)%h %Cred%cr %Cblue(%an)%C(white)%d%Creset %s\" --abbrev-commit --all
 [core]
 	excludesfile = ~/.dot/gitignore
+[push]
+	default = simple
